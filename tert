@@ -1,0 +1,24 @@
+package com.example.meuprimeiroapp
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Declaração dos componentes da interface
+        val myTextView = findViewById<TextView>(R.id.myTextView)
+        val myButton = findViewById<Button>(R.id.myButton)
+
+        // Define um "ouvinte de clique" para o botão
+        myButton.setOnClickListener {
+            // Quando o botão é clicado, muda o texto da TextView
+            myTextView.text = "O botão foi clicado!"
+        }
+    }
+}
