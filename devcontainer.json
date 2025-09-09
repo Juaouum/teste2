@@ -1,0 +1,16 @@
+{
+  "name": "Android Project",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/android-sdk:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.vscode-commons",
+        "vscjava.vscode-java-pack",
+        "fwcd.kotlin"
+      ]
+    }
+  }
+}
